@@ -9,7 +9,9 @@ img = cv2.imread('image.jpg')
 #convert image to grayscale
 grayscaled_img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
-
+#detect faces
+face_points = trained_face_data.detectMultiScale(grayscaled_img)
+print(face_points)
 
 
 cv2.imshow('Face Detector Harnoor', grayscaled_img)
