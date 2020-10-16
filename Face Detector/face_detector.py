@@ -15,7 +15,7 @@ face_points = trained_face_data.detectMultiScale(grayscaled_img)
 print(face_points)
 
 # draw rectangles
-for (x, y, w, h) in face_points:
+for (x, y, w, h) in face_points:  # loops through all the faces in an image
     cv2.rectangle(img, (x, y), (x+w, y+h), (0, 255, 0), 2)
 
 
