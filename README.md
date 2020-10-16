@@ -7,5 +7,7 @@ Methods I used to implement the Real Time Face Detector
 - Trained the Algorithm to detect the faces
 - Used OpenCV module  
 
+![alt text](https://github.com/reenharnoorsingh/Face-Detection/blob/master/Face%20Detector/image.jpg?raw=true)
+
 # Smile Detector
 Detects Smile in a face
