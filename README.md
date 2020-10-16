@@ -5,7 +5,8 @@
 Methods I used to implement the Real Time Face Detector
 - Made the faces Black and White (grayscale)
 - Trained the Algorithm to detect the faces
-- Used OpenCV module  
+- Used OpenCV module
+- Used Harr Cascade  
 
 ![alt text](https://github.com/reenharnoorsingh/Face-Detection/blob/master/Face%20Detector/Screenshots/ss_img.png?raw=true)
 - Screenshot of how this works.
