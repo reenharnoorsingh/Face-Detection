@@ -18,7 +18,7 @@ print(face_points)
 for (x, y, w, h) in face_points:  # loops through all the faces in an image
     cv2.rectangle(img, (x, y), (x+w, y+h), (0, 255, 0), 2)
 
-
+#Display the image with header
 cv2.imshow('Face Detector Harnoor', img)
 cv2.waitKey()
 
