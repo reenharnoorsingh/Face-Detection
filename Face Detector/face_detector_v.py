@@ -11,12 +11,16 @@ while True:
     frame_read, frame = webcam.read()
 
     #convert to grayscale
-    grayscaled_img = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+    grayscaled_frame = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
 
     # detect faces
-    face_points = trained_face_data.detectMultiScale(grayscaled_img)
+    face_points = trained_face_data.detectMultiScale(grayscaled_frame)
     print(face_points)
-    
+
+    # draw rectangles
+    for (x, y, w, h) in face_points:  # loops through all the faces in an image
+        cv2.rectangle(frame, (x, y), (x+w, y+h), (0, 255, 0), 2)
+
     #display with header
-    cv2.imshow('Face Detector Harnoor', grayscaled_img)
+    cv2.imshow('Face Detector Harnoor', grayscaled_frame)
     cv2.waitKey(1)
