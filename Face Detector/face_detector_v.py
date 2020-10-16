@@ -22,5 +22,5 @@ while True:
         cv2.rectangle(frame, (x, y), (x+w, y+h), (0, 255, 0), 2)
 
     #display with header
-    cv2.imshow('Face Detector Harnoor', grayscaled_frame)
+    cv2.imshow('Face Detector Harnoor', frame)
     cv2.waitKey(1)
