@@ -8,7 +8,7 @@ Methods I used to implement the Real Time Face Detector
 - Used OpenCV module  
 
 ![alt text](https://github.com/reenharnoorsingh/Face-Detection/blob/master/Face%20Detector/Screenshots/ss_img.png?raw=true)
-Screenshot of how this works.
+- Screenshot of how this works.
 
 # Smile Detector
 Detects Smile in a face
