@@ -15,7 +15,7 @@ while True:
 
     # detect faces
     face_points = trained_face_data.detectMultiScale(grayscaled_frame)
-    print(face_points)
+    #print(face_points)
 
     # draw rectangles
     for (x, y, w, h) in face_points:  # loops through all the faces in an image
@@ -23,4 +23,11 @@ while True:
 
     #display with header
     cv2.imshow('Face Detector Harnoor', frame)
-    cv2.waitKey(1)
+    key = cv2.waitKey(1)
+
+    # Stop if Q is pressed
+    if key ==81 or key==113:
+        break
+
+
+print("Code Completed")
